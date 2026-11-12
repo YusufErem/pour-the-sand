@@ -1,0 +1,21 @@
+:root { --ink:#1d1b29; --muted:#5b5870; --bg:#ffffff; --card:#f6f4fb; --line:#e6e3f0; --accent:#6b3fd4; }
+@media (prefers-color-scheme: dark) { :root { --ink:#eeeaf8; --muted:#aaa5c2; --bg:#16141f; --card:#1f1c2b; --line:#2c2840; --accent:#b49cff; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+h1 { font-size:1.6rem; margin:0 0 4px; line-height:1.25; }
+h2 { font-size:1.15rem; margin:28px 0 6px; }
+a { color:var(--accent); }
+.muted { color:var(--muted); font-size:.9rem; }
+nav { display:flex; flex-wrap:wrap; gap:6px 14px; margin-bottom:20px; }
+hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
+.hero { text-align:center; padding:32px 0 8px; }
+.hero h1 { font-size:2.2rem; }
+.pixels { display:grid; grid-template-columns:repeat(8, 18px); gap:3px; justify-content:center; margin:0 auto 20px; }
+.pixels span { width:18px; height:18px; border-radius:4px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-top:28px; }
+.card { display:block; padding:16px 18px; background:var(--card); border:1px solid var(--line); border-radius:14px; text-decoration:none; color:var(--ink); }
+.card strong { display:block; color:var(--accent); }
+.button { display:inline-block; padding:10px 18px; border-radius:999px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; }
+@media (prefers-color-scheme: dark) { .button { color:#16141f; } }
+footer { margin-top:48px; text-align:center; }
